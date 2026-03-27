@@ -12,6 +12,7 @@ class App(tk.Tk):
 
         # configure window
         self.title('QRever Studio')
+        self.iconbitmap('assets/logo.ico')
         self.geometry('600x450')
         self.resizable(False, False) # lock size
 
