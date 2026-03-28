@@ -1,10 +1,20 @@
 import os
 import string
+import sys
 import tkinter as tk
 from tkinter import filedialog
 from tkinter import messagebox
 from PIL import ImageTk
 import generator
+
+# PyInstaller helper for bundled resources
+def resource_path(relative_path: str) -> str:
+    try: # access PyInstaller temporary folder
+        base_path = sys._MEIPASS
+    except AttributeError: # access current directory
+        base_path = os.path.abspath('.')
+    
+    return os.path.join(base_path, relative_path)
 
 class App(tk.Tk):
     def __init__(self):
@@ -12,7 +22,7 @@ class App(tk.Tk):
 
         # configure window
         self.title('QRever Studio')
-        self.iconbitmap('assets/icon.ico')
+        self.iconbitmap(resource_path('assets/icon.ico'))
         self.geometry('600x450')
         self.resizable(False, False) # lock size
 
