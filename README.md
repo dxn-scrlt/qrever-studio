@@ -26,10 +26,16 @@ cd qrever-studio
 ```bash
 pip install -r requirements.txt
 ```
-- Launch app:
-```bash
-python main.py
-```
+- Launch app
+    - Run from the terminal:
+    ```bash
+    python main.py
+    ```
+    - Build and run a .exe:
+    ```bash
+    pip install pyinstaller
+    pyinstaller --onefile --windowed --icon=assets/icon.ico --add-data "assets/icon.ico;assets" --name QRever-Studio main.py
+    ```
 
 ### With .exe
 - Download [QRever-Studio.exe](dist/QRever-Studio.exe)
