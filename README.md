@@ -1,0 +1,56 @@
+# QRever Studio
+
+A QR code generator with color customizations and logo integration.
+
+## Screenshot
+
+![Screenshot](assets/screenshot.png)
+
+## Usage
+
+### With Python
+
+- Install **Python 3** from [Python](https://www.python.org/downloads); to check the version:
+```bash
+python --version
+```
+- Clone the repository:
+```bash
+git clone https://github.com/dxn-scrlt/qrever-studio.git
+```
+- Change current directory to project clone:
+```bash
+cd qrever-studio
+```
+- Install the dependencies:
+```bash
+pip install -r requirements.txt
+```
+- Launch app:
+```bash
+python main.py
+```
+
+### With .exe
+- Download [QRever-Studio.exe](dist/QRever-Studio.exe)
+- Run the EXE
+    - Run from the terminal:
+    ```bash
+    QRever-Studio.exe
+    ```
+    - Double-click the EXE
+
+## Features
+
+- Foreground and background color customization
+- Center-logo integration support
+- Real-time QR code preview
+- Classic UI with live status feedback
+- Unlimited-use, non-expiring QR code output
+
+## Tech Stack
+
+![Python](https://img.shields.io/badge/Python-3-FFD43B?logo=python)
+![Tkinter](https://img.shields.io/badge/Tkinter-GUI%20Framework-3776AB)
+![qrcode](https://img.shields.io/badge/qrcode-FFD43B)
+![Pillow](https://img.shields.io/badge/Pillow-3776AB)
