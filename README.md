@@ -14,16 +14,10 @@ A QR code generator with color customizations and logo integration.
 ```bash
 python --version
 ```
-- Clone the repository:
+- Clone the repository and install dependencies:
 ```bash
 git clone https://github.com/dxn-scrlt/qrever-studio.git
-```
-- Change current directory to project clone:
-```bash
 cd qrever-studio
-```
-- Install the dependencies:
-```bash
 pip install -r requirements.txt
 ```
 - Launch app
